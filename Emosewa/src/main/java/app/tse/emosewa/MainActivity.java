@@ -35,5 +35,30 @@ public class MainActivity extends AppCompatActivity {
                 }
         );
     }
+    //when back pressed to confirm whether accidently pressed or not
+    private Boolean exit = false;
+    @Override
+    public void onBackPressed() {
+        if (exit) {
+            Intent intent = new Intent(Intent.ACTION_MAIN);
+            intent.addCategory(Intent.CATEGORY_HOME);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
+            finish();
+            System.exit(0);
+        } else {
+            Toast.makeText(this, "Press Back again to Exit",
+                    Toast.LENGTH_SHORT).show();
+            exit = true;
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    exit = false;
+                }
+            }, 3 * 1000);
+
+        }
+
+    }
 
 }

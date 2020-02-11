@@ -28,6 +28,11 @@
             android:screenOrientation="portrait"
             android:parentActivityName="app.tse.emosewa.MainActivity"
             >
+            <intent-filter>
+                <action android:name="app.tse.emosewa.BeginPlace" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
 
         <activity android:name="app.tse.emosewa.AddPlace"
