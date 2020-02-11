@@ -85,9 +85,9 @@
         android:id="@+id/daypickbut"
         android:layout_width="50dp"
         android:layout_height="30dp"
-        android:layout_marginTop="50dp"
         android:layout_below="@id/editno"
-        android:layout_marginLeft="4dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="60dp"
         android:layout_toRightOf="@+id/daye"
         android:background="#CCC"
         android:text="Date" />
