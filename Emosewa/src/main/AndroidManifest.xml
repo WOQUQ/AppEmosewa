@@ -35,7 +35,7 @@
             android:parentActivityName="app.tse.emosewa.MainActivity"
             >
             <intent-filter>
-                <action android:name="app.msdeep14.tripcount.AddPlace" />
+                <action android:name="app.tse.emosewa.AddPlace" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -45,7 +45,7 @@
             android:parentActivityName="app.tse.emosewa.AddPlace"
             android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="app.msdeep14.tripcount.AddPlaceDetails" />
+                <action android:name="app.tse.emosewa.AddPlaceDetails" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -55,7 +55,7 @@
             android:screenOrientation="portrait"
             android:parentActivityName="app.tse.emosewa.MainActivity">
             <intent-filter>
-                <action android:name="app.msdeep14.tripcount.Display_friend" />
+                <action android:name="app.tse.emosewa.Display_friend" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -65,7 +65,7 @@
             android:screenOrientation="portrait"
             android:parentActivityName="app.tse.emosewa.Display_friend">
             <intent-filter>
-                <action android:name="app.msdeep14.tripcount.Display_friendDetails" />
+                <action android:name="app.tse.emosewa.Display_friendDetails" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -75,7 +75,7 @@
             android:screenOrientation="portrait"
             android:parentActivityName="app.tse.emosewa.ViewTripDetails">
             <intent-filter>
-                <action android:name="app.msdeep14.tripcount.Update" />
+                <action android:name="app.tse.emosewa.Update" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -85,7 +85,7 @@
             android:parentActivityName="app.tse.emosewa.AddPlace"
             android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="app.msdeep14.tripcount.ViewTripDetails" />
+                <action android:name="app.tse.emosewa.ViewTripDetails" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
