@@ -1,19 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.appemosewa">
+    package="app.tse.emosewa">
 
+    <supports-screens
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:anyDensity="true"
+        />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="app.tse.emosewa.MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="app.tse.emosewa.AddPlace"
+            android:screenOrientation="portrait"
+            android:parentActivityName="app.tse.emosewa.MainActivity"
+            >
+            <intent-filter>
+                <action android:name="app.tse.emosewa.AddPlace" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="app.tse.emosewa.AddPlaceDetails"
+            android:parentActivityName="app.tse.emosewa.AddPlace"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.tse.emosewa.AddPlaceDetails" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="app.tse.emosewa.Display_friend"
+            android:screenOrientation="portrait"
+            android:parentActivityName="app.tse.emosewa.MainActivity">
+            <intent-filter>
+                <action android:name="app.tse.emosewa.Display_friend" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="app.tse.emosewa.Display_friendDetails"
+            android:screenOrientation="portrait"
+            android:parentActivityName="app.tse.emosewa.Display_friend">
+            <intent-filter>
+                <action android:name="app.tse.emosewa.Display_friendDetails" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="app.tse.emosewa.Update"
+            android:screenOrientation="portrait"
+            android:parentActivityName="app.tse.emosewa.ViewTripDetails">
+            <intent-filter>
+                <action android:name="app.tse.emosewa.Update" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="app.tse.emosewa.ViewTripDetails"
+            android:parentActivityName="app.tse.emosewa.AddPlace"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.tse.emosewa.ViewTripDetails" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
     </application>
