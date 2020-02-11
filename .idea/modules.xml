@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AppEmosewa.iml" filepath="$PROJECT_DIR$/AppEmosewa.iml" />
       <module fileurl="file://$PROJECT_DIR$/Emosewa/Emosewa.iml" filepath="$PROJECT_DIR$/Emosewa/Emosewa.iml" />
-      <module fileurl="file://$PROJECT_DIR$/git-AppEmosewa.iml" filepath="$PROJECT_DIR$/git-AppEmosewa.iml" />
     </modules>
   </component>
 </project>

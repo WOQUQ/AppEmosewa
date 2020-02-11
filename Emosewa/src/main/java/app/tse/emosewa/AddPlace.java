@@ -49,9 +49,7 @@ public class AddPlace extends AppCompatActivity {
     int count=0;
     add_adapter adapter;
     List<additem> niitemlist;
-    ArrayAdapter adapter1;
     ListView listView;
-    ListView listView1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,7 +58,7 @@ public class AddPlace extends AppCompatActivity {
 
         fillActivity();
         fb=(FloatingActionButton)findViewById(R.id.mynew);
-        setTitle("Trips");
+        setTitle("Groups");
         opennewwindow();
         listView=(ListView)findViewById(R.id.list_add);
 
