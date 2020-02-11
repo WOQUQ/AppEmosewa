@@ -83,7 +83,7 @@ public class AddPlace extends AppCompatActivity {
     public void onBackPressed()
     {
         super.onBackPressed();
-        startActivity(new Intent(AddPlace.this, MainActivity.class));
+        startActivity(new Intent(AddPlace.this, BeginPlace.class));
         finish();
 
     }

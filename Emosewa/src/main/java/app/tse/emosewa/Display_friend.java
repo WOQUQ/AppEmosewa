@@ -231,7 +231,7 @@ public class Display_friend extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        Intent intent = new Intent(getApplicationContext(), BeginPlace.class);
         startActivity(intent);
         finish();
 
