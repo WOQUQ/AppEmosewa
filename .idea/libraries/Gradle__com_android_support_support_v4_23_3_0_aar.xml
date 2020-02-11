@@ -1,16 +1,14 @@
 <component name="libraryTable">
   <library name="Gradle: com.android.support:support-v4:23.3.0@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.android/build-cache/69f505ce4858a1638150f956afdbaa0ea285688a/output/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/6a1759f8183fd42b7e6c71840d37dfb71e89b2ad/output/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.android/build-cache/69f505ce4858a1638150f956afdbaa0ea285688a/output/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.android/build-cache/69f505ce4858a1638150f956afdbaa0ea285688a/output/res" />
-      <root url="jar://$USER_HOME$/.android/build-cache/69f505ce4858a1638150f956afdbaa0ea285688a/output/jars/libs/internal_impl-23.3.0.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/6a1759f8183fd42b7e6c71840d37dfb71e89b2ad/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/6a1759f8183fd42b7e6c71840d37dfb71e89b2ad/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/6a1759f8183fd42b7e6c71840d37dfb71e89b2ad/output/jars/libs/internal_impl-23.3.0.jar!/" />
     </CLASSES>
-    <JAVADOC>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-v4/23.3.0/54100eaf160977e4e8a9e53db9670538753bc514/support-v4-23.3.0-javadoc.jar!/" />
-    </JAVADOC>
+    <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-v4/23.3.0/3a4ca9cd18b85c51aaf40262ea9516e57a55c4ed/support-v4-23.3.0-sources.jar!/" />
     </SOURCES>
