@@ -1,15 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: com.melnykov:floatingactionbutton:1.3.0@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.android/build-cache/4e23f3e4bad8637567fab4598f01e8b5e0b93654/output/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/1c66ab889da7bd5774f5fac2f43d5344709c0bee/output/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.android/build-cache/4e23f3e4bad8637567fab4598f01e8b5e0b93654/output/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.android/build-cache/4e23f3e4bad8637567fab4598f01e8b5e0b93654/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/1c66ab889da7bd5774f5fac2f43d5344709c0bee/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/1c66ab889da7bd5774f5fac2f43d5344709c0bee/output/res" />
     </CLASSES>
-    <JAVADOC>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.melnykov/floatingactionbutton/1.3.0/6b08fa2b113f238702c0dca365a351f644949da4/floatingactionbutton-1.3.0-javadoc.jar!/" />
-    </JAVADOC>
+    <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.melnykov/floatingactionbutton/1.3.0/dc2a2e95b198d820de6c3783899c6f6214744444/floatingactionbutton-1.3.0-sources.jar!/" />
     </SOURCES>
