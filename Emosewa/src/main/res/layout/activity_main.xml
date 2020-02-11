@@ -12,17 +12,16 @@
     tools:context="app.tse.emosewa.MainActivity">
 
     <Button
+        android:id="@+id/btntrip"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btntrip"
-        android:layout_marginBottom="130dp"
-        android:textColor="@drawable/mainbuttontext"
-        android:text="trip expenses"
-        android:textSize="23sp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="130dp"
         android:background="@drawable/mainbuttonbg"
-        />
+        android:text="group expenses"
+        android:textColor="@drawable/mainbuttontext"
+        android:textSize="23sp" />
 
     <Button
         android:id="@+id/btnday"
