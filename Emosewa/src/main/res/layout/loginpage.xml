@@ -21,14 +21,15 @@
 
         <!--右上角的注册-->
         <!--android:textColor="#ff288dfe"-->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingRight="15dp"
-            android:singleLine="true"
-            android:text="Register"
-            android:textColor="@android:color/white"
-            android:textSize="17sp" />
+		<TextView
+			android:id="@+id/text_register"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingRight="15dp"
+			android:singleLine="true"
+			android:text="Register"
+			android:textColor="@android:color/white"
+			android:textSize="17sp" />
     </LinearLayout>
     <!--
     <LinearLayout
