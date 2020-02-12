@@ -18,7 +18,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="130dp"
-        android:background="@android:color/transparent"
+        android:background="@drawable/button_selector"
         android:text="group"
         android:textColor="@drawable/mainbuttontext"
         android:textSize="23sp" />
@@ -31,7 +31,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="70dp"
-        android:background="@android:color/transparent"
+        android:background="@drawable/button_selector"
         android:text="personnel debt"
         android:textColor="@drawable/mainbuttontext"
         android:textSize="23sp" />
