@@ -10,28 +10,6 @@
     <!--控件靠右边：垂直布局+right
         控件靠左边：垂直布局+left -->
     <!--菜单-->
-    <LinearLayout
-        android:id="@+id/title_layout"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:layout_alignParentTop="true"
-        android:background="@mipmap/menu_1"
-        android:gravity="left|center"
-        android:orientation="vertical" >
-
-        <!--右上角的注册-->
-        <!--android:textColor="#ff288dfe"-->
-        <TextView
-            android:id="@+id/text_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="15dp"
-            android:singleLine="true"
-            android:text="Back"
-            android:textColor="@android:color/white"
-            android:textSize="17sp"
-            />
-    </LinearLayout>
     <!--
     <LinearLayout
         android:id="@+id/title"
