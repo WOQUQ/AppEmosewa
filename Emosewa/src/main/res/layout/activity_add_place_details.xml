@@ -59,7 +59,7 @@
         android:layout_marginTop="135dp"
         android:layout_toRightOf="@+id/friend_name"
 
-        android:background="#CCC"
+        android:background="@color/defaultblue"
         android:text="ADD"
 
         android:textColor="#ffffff"
@@ -86,7 +86,7 @@
         android:layout_marginLeft="40dp"
         android:layout_marginTop="60dp"
         android:layout_toRightOf="@+id/daye"
-        android:background="#CCC"
+        android:background="@color/defaultblue"
         android:text="Date"
         android:textColor="#ffffff" />
 
@@ -99,7 +99,7 @@
         android:layout_centerHorizontal="true"
 
         android:layout_marginBottom="42dp"
-        android:background="#CCC"
+        android:background="@color/defaultblue"
         android:text="SUBMIT"
 
         android:textColor="#FFFFFF"
