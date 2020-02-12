@@ -15,7 +15,7 @@
             android:maxLength="12"
             android:textCursorDrawable="@drawable/cursorcolor"
             android:backgroundTint="@android:color/holo_blue_light"
-            android:hint="description"
+            android:hint="friend's name"
             android:inputType="textFilter|textMultiLine"
             android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
             />

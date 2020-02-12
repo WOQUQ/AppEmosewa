@@ -51,7 +51,7 @@ public class AddPlaceDetails extends AppCompatActivity {
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
         OnClickpickDate();
         OnClickButtonSubmit();
-        setTitle("New Trip");
+        setTitle("New Group");
         OnClickButtonAddFriend();
     }
 
@@ -151,7 +151,7 @@ public class AddPlaceDetails extends AppCompatActivity {
 
 
                                         if (result != -1) {
-                                            Toast.makeText(getApplicationContext(), "Trip Added", Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(getApplicationContext(), "Group Added", Toast.LENGTH_SHORT).show();
                                             Intent lis = new Intent(getApplicationContext(), AddPlace.class);
                                             startActivity(lis);
                                             finish();
