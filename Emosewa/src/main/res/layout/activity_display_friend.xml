@@ -16,9 +16,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="@drawable/editshape"
-        android:digits="-_0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:digits="-_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
         android:hint="Add Debt"
-        android:inputType="textFilter|textMultiLine"
+
+        android:inputType="text"
         android:maxLength="12"
         android:padding="10dip"
         android:textCursorDrawable="@drawable/cursorcolor" />
