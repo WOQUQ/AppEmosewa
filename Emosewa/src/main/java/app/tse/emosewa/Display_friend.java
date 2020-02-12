@@ -53,7 +53,7 @@ public class Display_friend extends AppCompatActivity {
         e1 = (EditText) findViewById(R.id.addname);
         f1=(ImageButton) findViewById(R.id.myF);
 
-        setTitle("Friend List");
+        setTitle("Debt List");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
         db2.execSQL("CREATE TABLE IF NOT EXISTS friends (ID INTEGER PRIMARY KEY AUTOINCREMENT ,friend TEXT NOT NULL,amount INTEGER NOT NULL DEFAULT 0);");

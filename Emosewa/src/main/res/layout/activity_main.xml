@@ -18,24 +18,23 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="130dp"
-        android:background="@drawable/mainbuttonbg"
-        android:text="group expenses"
+        android:background="@android:color/transparent"
+        android:text="group"
         android:textColor="@drawable/mainbuttontext"
         android:textSize="23sp" />
 
     <Button
         android:id="@+id/btnday"
-        android:layout_above="@+id/btntrip"
-        android:text="day2day expenses"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@drawable/mainbuttontext"
-        android:textSize="23sp"
-        android:layout_marginBottom="70dp"
-        android:background="@drawable/mainbuttonbg"
+        android:layout_above="@+id/btntrip"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        />
+        android:layout_marginBottom="70dp"
+        android:background="@android:color/transparent"
+        android:text="personnel debt"
+        android:textColor="@drawable/mainbuttontext"
+        android:textSize="23sp" />
 
 
 </RelativeLayout>
