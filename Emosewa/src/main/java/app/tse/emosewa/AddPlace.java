@@ -83,20 +83,24 @@ public class AddPlace extends AppCompatActivity {
                             if(swipeDetector.getAction() == SwipeDetector.Action.RL){
                                 progressDialog.show();
                                 new Handler().postDelayed(()->{
+                                    String str = ((TextView) view.findViewById(R.id.name)).getText().toString();
                                     Intent intent= new Intent(AddPlace.this,AddPlaceDetails.class);
+                                    intent.putExtra("id",str);
                                     startActivity(intent);
                                     finish();
                                     progressDialog.dismiss();
                                 },800);
                             }else{
-                                TextView temp = (TextView) view.findViewById(R.id.name);
-                                String str = temp.getText().toString();
-                                Intent intent = new Intent(getApplicationContext(), ViewTripDetails.class);
-                                intent.putExtra("id", str);
-                                startActivity(intent);
-                                finish();
                             }
+                        }else{
+                            TextView temp = (TextView) view.findViewById(R.id.name);
+                            String str = temp.getText().toString();
+                            Intent intent = new Intent(getApplicationContext(), ViewTripDetails.class);
+                            intent.putExtra("id", str);
+                            startActivity(intent);
+                            finish();
                         }
+
                     }
                 }
         );
