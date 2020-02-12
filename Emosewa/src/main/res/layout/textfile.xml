@@ -10,24 +10,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="10dip">
+
         <TextView
             android:id="@+id/note"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#FF7F3300"
-            android:textSize="20dip"
-            android:textStyle="italic"
             android:text="note"
-            />
+            android:textColor="@color/defaultblue"
+            android:textSize="20dip"
+            android:textStyle="italic" />
+
         <TextView
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20dip"
-            android:textColor="#FF267F00"
             android:paddingLeft="100dip"
             android:text="name"
-            />
+            android:textColor="@color/defaultblue"
+            android:textSize="20dip" />
     </LinearLayout>
     <TextView
         android:id="@+id/amount"

@@ -27,12 +27,17 @@
         android:id="@+id/myF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:src="@android:drawable/ic_input_add"
-        android:layout_margin="4dp"
         android:layout_alignParentEnd="true"
-        android:tint="@android:color/holo_blue_light"
-        android:text="Button"/>
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:src="@android:drawable/ic_input_add"
+        android:text="Button"
+        android:tint="@color/defaultblue" />
     <ListView
         android:id="@+id/list_friend"
         android:layout_below="@+id/addname"

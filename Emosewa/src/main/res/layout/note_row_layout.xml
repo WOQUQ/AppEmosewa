@@ -5,25 +5,23 @@
     >
 
     <TextView
+        android:id="@+id/note"
         android:layout_width="175dp"
         android:layout_height="55dp"
-        android:id="@+id/note"
-        android:textSize="20dp"
-        android:text="note"
         android:gravity="center"
-        android:textColor="#3232CD"
-        />
+        android:text="note"
+        android:textColor="@color/defaultblue"
+        android:textSize="20dp" />
 
     <TextView
+        android:id="@+id/amount"
         android:layout_width="wrap_content"
         android:layout_height="55dp"
-        android:id="@+id/amount"
-        android:layout_toRightOf="@+id/note"
         android:layout_alignParentRight="true"
-        android:text="amount"
-        android:textColor="#000"
+        android:layout_toRightOf="@+id/note"
         android:gravity="center"
-        />
+        android:text="amount"
+        android:textColor="@color/defaultblue" />
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
