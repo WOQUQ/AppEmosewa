@@ -1,10 +1,12 @@
 package app.tse.emosewa;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
+import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -27,7 +29,7 @@ import java.util.List;
 import java.util.Vector;
 
 /*
-* displays list of created trips
+* displays list of created groups
 * */
 
 public class AddPlace extends AppCompatActivity {
@@ -50,31 +52,59 @@ public class AddPlace extends AppCompatActivity {
     add_adapter adapter;
     List<additem> niitemlist;
     ListView listView;
+    ProgressDialog progressDialog;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_place);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        progressDialog = new ProgressDialog(this);
+        progressDialog.setCancelable(false);
+        progressDialog.setMessage("Editing grouping...");
+        progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+        progressDialog.setProgress(0);
+
         fillActivity();
         fb=(FloatingActionButton)findViewById(R.id.mynew);
         setTitle("Groups");
         opennewwindow();
         listView=(ListView)findViewById(R.id.list_add);
+        SwipeDetector swipeDetector = new SwipeDetector();
+        listView.setOnTouchListener(swipeDetector);
 
         listView.setOnItemClickListener(
                 new AdapterView.OnItemClickListener() {
                     @Override
                     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                        TextView temp = (TextView) view.findViewById(R.id.name);
-                        String str = temp.getText().toString();
-                        Intent intent = new Intent(getApplicationContext(), ViewTripDetails.class);
-                        intent.putExtra("id", str);
-                        startActivity(intent);
-                        finish();
+                        if(swipeDetector.swipeDetected()){
+                            if(swipeDetector.getAction() == SwipeDetector.Action.RL){
+                                progressDialog.show();
+                                new Handler().postDelayed(()->{
+                                    String str = ((TextView) view.findViewById(R.id.name)).getText().toString();
+                                    Intent intent= new Intent(AddPlace.this,AddPlaceDetails.class);
+                                    intent.putExtra("id",str);
+                                    startActivity(intent);
+                                    finish();
+                                    progressDialog.dismiss();
+                                },800);
+                            }else{
+                            }
+                        }else{
+                            TextView temp = (TextView) view.findViewById(R.id.name);
+                            String str = temp.getText().toString();
+                            Intent intent = new Intent(getApplicationContext(), ViewTripDetails.class);
+                            intent.putExtra("id", str);
+                            startActivity(intent);
+                            finish();
+                        }
+
                     }
                 }
         );
+
     }
 
     @Override
