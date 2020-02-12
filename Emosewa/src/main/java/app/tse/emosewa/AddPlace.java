@@ -85,7 +85,22 @@ public class AddPlace extends AppCompatActivity {
                                 new Handler().postDelayed(()->{
                                     String str = ((TextView) view.findViewById(R.id.name)).getText().toString();
                                     Intent intent= new Intent(AddPlace.this,AddPlaceDetails.class);
+                                    Log.i("id",str);
                                     intent.putExtra("id",str);
+                                    Cursor c=db1.rawQuery("SELECT * FROM Trip_details WHERE place_name='"+str+"';",null);
+                                    if(c!=null){
+                                        if(c.moveToFirst()){
+                                            do{
+                                                String name=c.getString(c.getColumnIndex("place_name"));
+                                                String date = c.getString(c.getColumnIndex("date_go"));
+                                                String friend = c.getString(c.getColumnIndex("friend_no"));
+                                                Log.i("date",date);
+                                                Log.i("name",name);
+                                                Log.i("friend",friend);
+                                                }
+                                            while(c.moveToNext());
+                                        }
+                                    }
                                     startActivity(intent);
                                     finish();
                                     progressDialog.dismiss();
