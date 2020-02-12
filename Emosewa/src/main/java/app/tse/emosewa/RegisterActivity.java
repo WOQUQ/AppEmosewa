@@ -10,6 +10,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -43,8 +44,8 @@ public class RegisterActivity extends AppCompatActivity {
         progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         progressDialog.setProgress(0);
 
-        textBack = (TextView) findViewById(R.id.text_back);
-        onClickTextBackListener();
+        //textBack = (TextView) findViewById(R.id.text_back);
+        //onClickTextBackListener();
 
         btn_register = (Button) findViewById(R.id.register_btn);
         user = (EditText) findViewById(R.id.login_input_username);
@@ -94,17 +95,36 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
 
-    private void onClickTextBackListener() {
-        textBack.setOnClickListener(
-                new View.OnClickListener(){
-                    @Override
-                    public void onClick(View view){
-                        Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                }
-        );
+//    private void onClickTextBackListener() {
+//        textBack.setOnClickListener(
+//                new View.OnClickListener(){
+//                    @Override
+//                    public void onClick(View view){
+//                        Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
+//                        startActivity(intent);
+//                        finish();
+//                    }
+//                }
+//        );
+//    }
+    @Override
+    public void onBackPressed()
+    {
+        super.onBackPressed();
+        startActivity(new Intent(RegisterActivity.this, MainActivity.class));
+        finish();
+
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }
 
