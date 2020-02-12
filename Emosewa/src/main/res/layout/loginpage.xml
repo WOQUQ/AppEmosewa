@@ -10,28 +10,7 @@
     <!--控件靠右边：垂直布局+right
         控件靠左边：垂直布局+left -->
     <!--菜单-->
-    <LinearLayout
-        android:id="@+id/title_layout"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:layout_alignParentTop="true"
-        android:background="@mipmap/menu_1"
-        android:gravity="right|center"
-        android:orientation="vertical" >
-
-        <!--右上角的注册-->
-        <!--android:textColor="#ff288dfe"-->
-		<TextView
-			android:id="@+id/text_register"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:paddingRight="15dp"
-			android:singleLine="true"
-			android:text="Register"
-			android:textColor="@android:color/white"
-			android:textSize="17sp" />
-    </LinearLayout>
-    <!--
+	<!--
     <LinearLayout
         android:id="@+id/title"
         android:layout_width="match_parent"
@@ -70,6 +49,7 @@
 			android:scaleType="fitXY" />
 
 		<!--用户名行布局-->
+
 		<FrameLayout
 			android:id="@+id/username_layout"
 			android:layout_width="fill_parent"
@@ -173,6 +153,7 @@
 				android:layout_marginRight="45dp"
 				android:background="@mipmap/delete"
 				android:visibility="invisible" />
+
 		</FrameLayout>
 
 		<!--记住账号和密码的勾选框-->
@@ -197,4 +178,26 @@
 			android:textSize="22sp" />
 
 	</RelativeLayout>
+
+	<TextView
+		android:id="@+id/text_register"
+		android:layout_width="wrap_content"
+		android:layout_height="41dp"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentBottom="true"
+		android:layout_marginStart="162dp"
+		android:layout_marginLeft="162dp"
+		android:layout_marginTop="511dp"
+		android:layout_marginEnd="144dp"
+		android:layout_marginRight="144dp"
+		android:layout_marginBottom="51dp"
+		android:singleLine="false"
+		android:text="Register"
+		android:textColor="@android:color/white"
+		android:textSize="24sp" />
+
 </RelativeLayout>
